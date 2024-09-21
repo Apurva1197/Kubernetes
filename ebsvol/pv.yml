@@ -10,6 +10,8 @@ spec:
   accessModes:
     - ReadWriteOnce  # Access mode for the volume
   persistentVolumeReclaimPolicy: Recycle  # Policy for the volume after release
+  hostPath:
+    path: "/mnt/data"
   storageClassName: ebs-sc  # Custom storage class name
   awsElasticBlockStore:
     volumeID: aws://ap-south-1/vol-0a003ce53640c8977  # Replace with your actual EBS volume ID
