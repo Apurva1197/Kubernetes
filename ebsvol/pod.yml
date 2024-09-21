@@ -11,7 +11,7 @@ spec:
     - name: myfrontend
       image: nginx
       volumeMounts:  #this parameter provides the actual path of container where it will be mounted on your external storage.
-      - mountPath: "/share/local/nginx/"  #pathway of your data storage loc
+      - mountPath: "/mnt/data"  #pathway of your data storage loc
         name: ebs-storage
       ports:
        - containerPort: 80

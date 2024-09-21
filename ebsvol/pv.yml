@@ -14,8 +14,7 @@ spec:
   awsElasticBlockStore:
     volumeID: aws://ap-south-1/vol-0a003ce53640c8977  # Replace with your actual EBS volume ID
     fsType: ext4  # File system type for the volume
-  hostPath:
-    path: "/mnt/data"
+  
 
 ---
 
